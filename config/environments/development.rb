@@ -38,4 +38,11 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  # 
+   def create
+    #@movie = Movie.create!(params[:movie]) #old way
+    @movie = Movie.create!(movie_params)  # new way
+    flash[:notice] = "#{@movie.title} was successfully created."
+    redirect_to movies_path
+  end
 end
