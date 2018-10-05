@@ -10,6 +10,7 @@ def show
   # will render app/views/movies/show.html.haml by default
 end
     
+    
 
     
     # add below all other methods
