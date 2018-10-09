@@ -1,3 +1,5 @@
+#This is a comment, again
+
 class MoviesController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, :with => :record_not_found
 
